@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- OFDM spektrum çubukları -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,54 h4 v12 h-4 z M32,48 h4 v24 h-4 z M40,42 h4 v36 h-4 z M48,40 h4 v40 h-4 z M56,38 h4 v44 h-4 z M64,40 h4 v40 h-4 z M72,42 h4 v36 h-4 z M80,48 h4 v24 h-4 z" />
+</vector>
