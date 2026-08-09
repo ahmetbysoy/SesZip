@@ -7,19 +7,20 @@
 
 Android demo uygulaması: alt navigasyon (Dönüştür / Çöz / Fikirler), otomatik APK derleyen GitHub Actions workflow.
 
-![build](https://img.shields.io/github/actions/workflow/status/ahmetbysoy/SesZip/build-apk.yml?label=APK%20Build)
+![build](https://img.shields.io/github/actions/workflow/status/ahmetbysoy/SesZip/bozok-pro.yml?label=%F0%9F%9A%80%20BOZOK%20PRO)
 
 ---
 
 ## 🚀 APK'yı İndir
 
-Yerelde derlemene gerek yok — her push'ta GitHub Actions otomatik derler:
+Yerelde derlemene gerek yok — **BOZOK PRO fabrikası** her push'ta otomatik üretir:
 
 1. Repo sayfasında **Actions** sekmesine git
-2. En üstteki **"Build APK"** run'ına tıkla
-3. Alttaki **Artifacts** bölümünden `SesZip-debug-apk` indir (veya Release'e bak)
+2. En üstteki **"🚀 BOZOK PRO • Android APK Fabrikası"** run'ına tıkla
+3. Alttaki **Artifacts** bölümünden `🚀-BOZOK-PRO-Debug-...` indir (Release imzalı değildir; `bilinmeyen kaynaklara izin ver` gerekir)
+4. Release imzalı APK istersen `KEYSTORE_BASE64`, `KEYSTORE_PASSWORD`, `KEY_ALIAS`, `KEY_PASSWORD` secret'larını ekle — fabrika otomatik imzalar
 
-> Tag açarsan (`git tag v0.6.0 && git push origin v0.6.0`) APK otomatik olarak **Release**'e eklenir.
+> Tag açarsan (`git tag v0.6.1 && git push origin v0.6.1`) fabrika Debug + Release APK'lerini **GitHub Release**'e otomatik ekler.
 
 ---
 
@@ -90,7 +91,7 @@ Gerekli: JDK 17, Android SDK (compileSdk 35).
 
 ```
 SesZip/
-├── .github/workflows/build-apk.yml   ← otomatik APK (Actions)
+├── .github/workflows/bozok-pro.yml   ← 🚀 BOZOK PRO fabrikası (otomatik APK + Release)
 ├── app/src/main/java/com/seszip/app/
 │   ├── MainActivity.kt               ← Compose UI + 3 sekme
 │   └── OfdmModem.kt                  ← FFT, OFDM, HDC, paket, WAV (saf Kotlin, bağımlılık yok)
